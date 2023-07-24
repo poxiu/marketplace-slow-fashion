@@ -9,7 +9,7 @@ import {
         getTask,
         updateTask,
 
-  } from "./firebase.js";
+} from "./firebase.js";
 import './signupForm.js';
 import './logout.js';
 import './signinForm.js';

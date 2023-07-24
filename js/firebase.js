@@ -3,7 +3,7 @@
         import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-analytics.js";
         import { getAuth } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js"
         // import { } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js"
-         import { getFirestore,
+        import { getFirestore,
         addDoc,
         getDocs,
         collection,
@@ -80,7 +80,3 @@
         // Crear una funcion que actualice una tarea
 
         export const updateTask = (id, NewFieldsTask) => updateDoc(doc(db, "tareas", id), NewFieldsTask);
-      
-
-        
-        

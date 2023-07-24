@@ -20,17 +20,17 @@ try {
     const modal = bootstrap.Modal.getInstance(signupModal).hide()
     // modal.hide()
 
-    } catch (error) {
+} catch (error) {
         // console.log(error.message)
         // console.log(error.code)
-        if (error.code === 'auth/weak-password') {
-            showMessage("password debil","error")
-        } else if (error.code === 'auth/invalid-email') {
-            showMessage("email invalido","error")
-        } else if (error.code === 'auth/email-already-in-use') {
-            showMessage("ese email ya está usado","error")
-        } else if (error.code){
-            showMessage("otro error","error");
-        }
+    if (error.code === 'auth/weak-password') {
+        showMessage("password debil", "error")
+    } else if (error.code === 'auth/invalid-email') {
+        showMessage("email invalido", "error")
+    } else if (error.code === 'auth/email-already-in-use') {
+        showMessage("ese email ya está usado", "error")
+    } else if (error.code){
+        showMessage("otro error", "error");
     }
-    });
+}
+});

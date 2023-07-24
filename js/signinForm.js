@@ -19,8 +19,7 @@ signInForm.addEventListener('click', async (e) => {
 
     } catch(error) {
         //console.log(error)
-        if(error.code === 'auth/wrong-password')
-        {
+        if(error.code === 'auth/wrong-password') {
             showMessage('Contraseña incorrecta', 'error')
         }else if (error.code === 'auth/user-not-found'){
             showMessage("Usuario no encontrado", "error")
