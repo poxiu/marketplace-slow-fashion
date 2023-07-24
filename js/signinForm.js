@@ -1,10 +1,10 @@
-import { signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js"
+import { signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js"
 import { auth } from "./firebase.js"
 import { showMessage } from "./showMessage.js";
 
 const signInForm = document.querySelector('#login-form');
 
-signInForm.addEventListener('click', async (e) => {
+signInForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     const email = signInForm['signin-email'].value;
     const password = signInForm['signin-password'].value;
@@ -14,6 +14,7 @@ signInForm.addEventListener('click', async (e) => {
         // cerra modal del logeo del usuario
         const modal = bootstrap.Modal.getInstance(signInForm.closest('.modal'));
         modal.hide();
+        signInForm.reset();
         // Mensaje de Bienvenida
         showMessage('Bienvenido ' + userCredentials.user.email);
 

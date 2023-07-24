@@ -18,7 +18,7 @@ try {
     // cerrar el modal cuando se registre un usuario
     const signupModal = document.querySelector('#signupModal')
     const modal = bootstrap.Modal.getInstance(signupModal).hide()
-    // modal.hide()
+    modal.hide()
 
 } catch (error) {
         // console.log(error.message)

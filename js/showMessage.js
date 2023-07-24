@@ -11,6 +11,6 @@ export function showMessage(message, type = 'success') {
         style: {
           background: type === 'success' ? 'green': 'red',
         },
-        onClick: function(){} // Callback after click
+        //onClick: function(){} // Callback after click
       }).showToast();
 }

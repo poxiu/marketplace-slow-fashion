@@ -14,11 +14,9 @@
 </head>
 
 <body>
-    <h1>Firebase-autenticacion-correo</h1>
-
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">FirebaseApp</a>
+            <a class="navbar-brand" href="#">Mis A</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -26,8 +24,8 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
 
-                    <li class="nav-item">
-                        <a class="nav-link logged-out" href="#" data-bs-toggle="modal"
+                    <li class="nav-item" href="./htmls/publicaciones.html">
+                        <a class="nav-link logged-out" data-bs-toggle="modal"
                             data-bs-target="#signinModal">Sign in</a>
                     </li>
                     <li class="nav-item">
@@ -43,27 +41,7 @@
         </div>
     </nav>
 
-    <!--CRUD - diario digital para un profe o estudiante -->
-    <div class="container">
-        <div class="row">
-            <div class="col md-6 offset-md-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h1 class="h4">Agregar tarea o nota </h1>
-                        <form id="task-form">
-                            <input type="text" id="task-title" class="form-control mb-3" placeholder="Titulo tarea"
-                                autofocus>
-                            <label for="description">Descripcion: </label>
-                            <textarea id="task-description" rows="3" class="form-control mb-3" placeholder="Descripcion"></textarea>
-
-                            <button class="btn btn-primary" id="btn-task-save">Guardar</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col md-6 offset-md-3" id="task-container"></div>
+    
 
     <!-- Signin Modal -->
     <div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

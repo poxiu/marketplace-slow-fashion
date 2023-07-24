@@ -89,7 +89,7 @@ window.addEventListener("DOMContentLoaded", async () => {
         id = doc.id;
         taskForm['btn-task-save'].innerText = 'Actualizar';
         });
-   
+
 
 });
 
