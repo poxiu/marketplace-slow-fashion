@@ -9,14 +9,15 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!--Toastify-->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-
+    <!--css-->
+    <link rel="stylesheet" href="/marketplace-slow-fashion/css/estilos.css">
     <title>Autenticacion-correo</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Mis A</a>
+            <a class="navbar-brand" href="#">KPinta</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -24,7 +25,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
 
-                    <li class="nav-item" href="./htmls/publicaciones.html">
+                    <li class="nav-item" href="#">
                         <a class="nav-link logged-out" data-bs-toggle="modal"
                             data-bs-target="#signinModal">Sign in</a>
                     </li>
@@ -41,7 +42,56 @@
         </div>
     </nav>
 
+    <!--CRUD - diario digital para un profe o estudiante -->
+    <div class="container">
+        <div class="row">
+            <div class="col md-6 offset-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="h4">Agregar tarea o nota </h1>
+                        <form id="task-form">
+                            <input type="text" id="task-title" class="form-control mb-3" placeholder="Titulo tarea"
+                                autofocus>
+                            <label for="description">Descripcion: </label>
+                            <textarea id="task-description" rows="3" class="form-control mb-3" placeholder="Descripcion"></textarea>
+
+                            <button class="btn btn-primary" type="submit" id="btn-task-save">Guardar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col md-6 offset-md-3" id="task-container"></div>
+
+    <!-- BENEFICIOS -->
+
+    <h1 class="titulo">Beneficios!</h1>
+    <div class="tarjetas">
+        <div class="container-card">
+            <div>
+              <img src=".." alt="tendedero de Ropa" width="150px" height="150px">
+              <br>
+              <br>
+              <h3 class="titulo">Dale una Segunda oportunidad a tu Ropa!</h3>
+            </div>
+      
+            <div>
+              <img src="..." alt=" ayuda al planeta" width="150px" height="150px">
+              <br>
+              <br>
+              <h3 class="titulo">Ayuda al planeta creando habitos Sostenibles</h3>
+            </div>
+      
+            <div>
+              <img src="..." alt="ganate unos billetes" width="150px" height="150px">
+              <br>
+              <br>
+              <h3 class="titulo">Recibe tu Pago por lo que vendas!</h3>
+            </div>
+    </div>
     
+
 
     <!-- Signin Modal -->
     <div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

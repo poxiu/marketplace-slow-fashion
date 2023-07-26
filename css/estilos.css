@@ -1,0 +1,51 @@
+/* CSS Base*/
+/*body {
+    width: 90%;
+    max-width: 900px;
+    margin: 2em auto;
+    font: 0.9em/1.2 Arial, Helvetica, sans-serif;
+  }
+  
+  .container > div {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #cfe8dc;
+    border: 2px solid #4fb9e3;
+    text-align: center;
+  }*/
+  
+  /* Fin de la base */
+  /*Trabajando con el docente:*/
+  .tarjetas{
+    width: 90%;
+    max-width: 900px;
+    margin: 2em auto;
+  }
+
+  .titulo{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container-card > div{
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(202, 218, 205);
+    border: 1px solid black;
+    text-align: center;
+  }
+  
+  .container-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    grid-gap: 20px;
+  }
+  
+  @media only screen and (max-width: 600px){
+    .container-card{
+      grid-template-columns: 1fr;
+      grid-auto-rows: auto;
+      grid-gap: 10px;
+    }
+  }
