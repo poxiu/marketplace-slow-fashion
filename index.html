@@ -11,13 +11,15 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <!--css-->
     <link rel="stylesheet" href="/marketplace-slow-fashion/css/estilos.css">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/617b1e1757.js" crossorigin="anonymous"></script>
     <title>Autenticacion-correo</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">KPinta</a>
+            <a class="navbar-brand" href="#">Q-Pinta</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -34,7 +36,7 @@
                             data-bs-target="#signupModal">Sign up</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link logged-in" href="#" id="logout">Logout</a>
+                        <a class="nav-link logged-in" href="#" id="logout">Logout <i class="fa-solid fa-right-to-bracket" style="color: #666970;"></i></a> 
                     </li>
 
                 </ul>
@@ -54,8 +56,14 @@
                                 autofocus>
                             <label for="description">Descripcion: </label>
                             <textarea id="task-description" rows="3" class="form-control mb-3" placeholder="Descripcion"></textarea>
-
-                            <button class="btn btn-primary" type="submit" id="btn-task-save">Guardar</button>
+                            <!-- INPUT DE PRECIO -->
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">$</span>
+                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                <span class="input-group-text">.00</span>
+                              </div>
+                              <!-- TERMINA EL PRECIO -->
+                            <button class="btn btn btn-success" type="submit" id="btn-task-save">Publicar</button>
                         </form>
                     </div>
                 </div>
@@ -70,24 +78,24 @@
     <div class="tarjetas">
         <div class="container-card">
             <div>
-              <img src=".." alt="tendedero de Ropa" width="150px" height="150px">
-              <br>
-              <br>
-              <h3 class="titulo">Dale una Segunda oportunidad a tu Ropa!</h3>
+                <i class="icons fa-solid fa-shirt" style="color: #666970;"></i>
+                <br>
+                <br>
+                <h4 class="titulo">Dale una Segunda oportunidad a tu Ropa!</h4>
             </div>
 
             <div>
-              <img src="..." alt=" ayuda al planeta" width="150px" height="150px">
+                <i class="icons fa-solid fa-hand-holding-heart" style="color: #666970;"></i>
               <br>
               <br>
-              <h3 class="titulo">Ayuda al planeta creando hábitos Sostenibles</h3>
+              <h4 class="titulo">Ayuda al planeta creando hábitos Sostenibles</h4>
             </div>
 
             <div>
-              <img src="..." alt="ganate unos billetes" width="150px" height="150px">
+                <i class="icons fa-regular fa-money-bill-1" style="color: #666970;"></i>
               <br>
               <br>
-              <h3 class="titulo">Recibe tu pago por lo que vendas!</h3>
+              <h4 class="titulo">Recibe tu pago por lo que vendas!</h4>
             </div>
         </div>
     </div>
@@ -168,16 +176,16 @@
     <div class="footer">
         <div class="footer-items">
             <div class="slogan">
-                <h2>vende sostenible, gana sostenible y ayuda al planeta</h2>
+                <h2>Vende sostenible, Gana sostenible y Ayuda al planeta</h2>
             </div>
     
             <div class="redes-sociales">
                 
                 <ul>
-                    <li><h5>siguenos</h5></li>
-                    <li>instagram</li>
-                    <li>twitter</li>
-                    <li>Github</li>
+                    <li><h5>Siguenos</h5></li>
+                    <li><i class="fa-brands fa-github"></i><a href="https://github.com/poxiu" >GitHub - Elva</a></li>
+                    <li><i class="fa-brands fa-github"></i><a href="https://htmldesdecero.es">GitHub - Angie</a></li>
+                    <li><i class="fa-brands fa-github"></i><a href="https://github.com/EudeG">GitHub - Eudenia</a></li>
                 </ul>
             </div>
     
@@ -195,6 +203,7 @@
     <!--Toastify-->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="js/script.js" type="module"></script>
+    
 </body>
 
 </html>
