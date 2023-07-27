@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!--Toastify-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!--css-->
+    <link rel="stylesheet" href="/marketplace-slow-fashion/css/estilos.css">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/617b1e1757.js" crossorigin="anonymous"></script>
+    <title>Perfil</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/marketplace-slow-fashion/index.html">Q-Pinta</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link logged-in" href="/marketplace-slow-fashion/htmls/perfil.html" id="perfil">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link logged-in" href="#" id="logout">Logout <i class="fa-solid fa-right-to-bracket" style="color: #666970;"></i></a> 
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--CRUD - diario digital para un profe o estudiante -->
+<!--CRUD - diario digital para un profe o estudiante -->
+    <div class="container">
+        <div class="row">
+            <div class="col md-6 offset-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="h4">Que vas a vender?</h1>
+                        <form id="task-form">
+                            <input type="text" id="task-title" class="form-control mb-3" placeholder="Titulo tarea"
+                                autofocus>
+                            <label for="description">Descripcion: </label>
+                            <textarea id="task-description" rows="3" class="form-control mb-3" placeholder="Descripcion"></textarea>
+                            
+                            
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">$</span>
+                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                <span class="input-group-text">.00</span>
+                            </div>
+
+
+                            <button class="btn btn btn-success" type="submit" id="btn-task-save">Publicar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col md-6 offset-md-3" id="task-container"></div>
+
+
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <!--Toastify-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="../js/script.js" type="module"></script>
+</body>
+</html>

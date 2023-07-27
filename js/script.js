@@ -33,29 +33,29 @@ window.addEventListener("DOMContentLoaded", async () => {
     onGetTasks((querySnapshot) => {
     
     // Inicializamos nuestro html vacio     
-     let html = "";
+    let html = "";
      //console.log(querySnapshot);
     querySnapshot.forEach((doc) => {
- 
+
      // console.log(doc)
     //console.log(doc.data());
      //console.log(taskContainer);
-         const task = doc.data()
+        const task = doc.data()
     
     // Para ver los idS de cada tarea de los botones
-         console.log(doc.id)
+        console.log(doc.id)
 
-             html += `
-                  <div>
-                       <h3>${task.title}</h3>
+            html += `
+                    <div>
+                        <h3>${task.title}</h3>
                         <p>${task.description}</p>
                         <button class='btn btn-delete btn-danger' data-id="${doc.id}">Borrar</button>
                         <button class='btn btn-edit btn-success' data-id="${doc.id}">Editar</button>
-                 </div>
-                 `;
+                    </div>
+                `;
         });
-     taskContainer.innerHTML = html;
-     
+    taskContainer.innerHTML = html;
+    
     const btnsDelete = document.querySelectorAll('.btn-delete')
     //Probamos los botones
     //console.log(btnsDelete)
@@ -117,7 +117,7 @@ taskForm.addEventListener('submit', async (e) => {
             description: description.value
         } );
     }
-     taskForm.reset();
+    taskForm.reset();
 
 });
 
