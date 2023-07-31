@@ -14,6 +14,8 @@ import './signupForm.js';
 import './logout.js';
 import './signinForm.js';
 import './googleLogin.js';
+import './wall.js';
+import '..router/router.js';
 
 
 const taskForm = document.getElementById("task-form");
@@ -27,7 +29,12 @@ let editStatus = false;
 
 let id = '';
 
+window.addEventListener('hashchange', () => {
+    changeViews(window.location.hash);
+});
+
 window.addEventListener("DOMContentLoaded", async () => {
+    
   //getTasks();
    // const querySnapshot = await getTasks();
     onGetTasks((querySnapshot) => {

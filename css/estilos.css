@@ -1,5 +1,11 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Borel&family=DM+Sans:ital,wght@0,200;1,1000&family=Lumanosimo&family=Oswald:wght@600&display=swap');
+
+  
+  body{
+    background-image: url(https://i.pinimg.com/564x/78/0d/44/780d444744dfc2f60b0040798bc91a4a.jpg);
+    background-size: cover;
+  }
 /* hacer import */
 /* CSS Base*/
 /*body {
@@ -75,12 +81,19 @@ font-family: 'Oswald', sans-serif;
   padding: 10px;
 }
 
+/*.centrar-diapositiva{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 80%;
+}*/
 
   .container-card > div{
     border-radius: 5px;
     padding: 10px;
     background-color: rgb(235, 234, 195);
-    border: 1px solid rgb(85, 81, 81);
+    /*border: 1px solid rgb(85, 81, 81);*/
     text-align: center;
   }
   
