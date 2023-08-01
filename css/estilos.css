@@ -1,5 +1,6 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Borel&family=DM+Sans:ital,wght@0,200;1,1000&family=Lumanosimo&family=Oswald:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@1,9..40,200&family=Oswald:wght@600&display=swap');
+
 
   body{
     background-image: url(https://i.pinimg.com/564x/78/0d/44/780d444744dfc2f60b0040798bc91a4a.jpg);
@@ -22,6 +23,10 @@
     font-weight: 600;
   }
   
+  .subtitulos-cards{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 200;
+  }
   .footer{
   /*left: 0;*/
   /*width: 100%;
