@@ -14,28 +14,6 @@
         updateDoc
         } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore.js"
 
-      
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        // const firebaseConfig = {
-        //   apiKey: "AIzaSyD9_mTe1t_C34mAEqdG3zXsxbX4jSHDkyk",
-        //   authDomain: "unidad4-7e24c.firebaseapp.com",
-        //   projectId: "unidad4-7e24c",
-        //   storageBucket: "unidad4-7e24c.appspot.com",
-        //   messagingSenderId: "1059673990918",
-        //   appId: "1:1059673990918:web:8096dde83de017d2c7a087",
-        //   measurementId: "G-4W89RT0ZLH"
-        // };
-        
-        /*const firebaseConfig = {
-          apiKey: "AIzaSyCOnomYvwI_aIh42er9oVH8oEaGi-j6q5M",
-          authDomain: "unidad4-e9868.firebaseapp.com",
-          projectId: "unidad4-e9868",
-          storageBucket: "unidad4-e9868.appspot.com",
-          messagingSenderId: "716027473039",
-          appId: "1:716027473039:web:d9176296926d58fccd54fa",
-          measurementId: "G-4ZF9F3KNEX"
-        };*/
 
   // Your web app's Firebase configuration
   const firebaseConfig = {
