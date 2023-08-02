@@ -18,11 +18,15 @@
   .titulo{
     display: flex;
     justify-content: center;
-    color: rgb(107, 105, 105);
+    color: rgb(85, 82, 82);
     font-family: 'Oswald', sans-serif;
-    font-weight: 600;
+    font-weight: 300;
   }
-  
+  .regalito{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+  }
   .subtitulos-cards{
     font-family: 'DM Sans', sans-serif;
     font-size: 200;
@@ -71,7 +75,7 @@ font-family: 'Oswald', sans-serif;
 
 
   .container-card > div{
-    border-radius: 5px;
+    border-radius: 15px;
     padding: 10px;
     background-color: rgb(235, 234, 195);
     text-align: center;
