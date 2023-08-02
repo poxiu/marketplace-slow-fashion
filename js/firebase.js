@@ -33,9 +33,9 @@
         // Conexion a la base de datos
         export const db = getFirestore();
 
-        export const saveTask = (title, description) => 
+        export const saveTask = (title, description, price, contact) => 
           //console.log(title, description);
-        addDoc(collection(db, "tareas"), {title, description})
+        addDoc(collection(db, "tareas"), {title, description, price, contact})
 
         // Listar datos
         //export const getTasks = () => console.log('tasks-list');

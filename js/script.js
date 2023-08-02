@@ -46,16 +46,21 @@ window.addEventListener("DOMContentLoaded", async () => {
          console.log(doc.id)
 
              html += `
-                  <div>
-                       <h3>${task.title}</h3>
+                  <div class="card card-body pt-2">
+                       <h2>${task.title}</h2>
+                       <h3>${task.price}</h3>
                         <p>${task.description}</p>
-                        <button class='btn btn-delete btn-danger' data-id="${doc.id}">Borrar</button>
-                        <button class='btn btn-edit btn-success' data-id="${doc.id}">Editar</button>
+                        <p>${task.contact}</p>
+                        <div>
+                            <button class='btn btn-danger btn-delete' data-id="${doc.id}"><i class="fa-solid fa-trash-can" style="color: #061228;"></i></button>
+                            <button class='btn btn-warning btn-edit' data-id="${doc.id}"><i class="fa-solid fa-pen" style="color: #061228;"></i></button>
+                        </div>
+                        
                  </div>
                  `;
         });
-     taskContainer.innerHTML = html;
-     
+        taskContainer.innerHTML = html;
+
     const btnsDelete = document.querySelectorAll('.btn-delete')
     //Probamos los botones
     //console.log(btnsDelete)
@@ -84,6 +89,8 @@ window.addEventListener("DOMContentLoaded", async () => {
         const task = doc.data(); 
         taskForm['task-title'].value = task.title;
         taskForm['task-description'].value = task.description;
+        taskForm['task-price'].value = task.price;
+        taskForm['task-contact'].value = task.contact;
         
         editStatus = true;
         id = doc.id;
@@ -104,20 +111,28 @@ taskForm.addEventListener('submit', async (e) => {
 
     const title = taskForm['task-title']
     const description = taskForm['task-description']
-    // console.log(title.value, description.value) 
+    const price = taskForm['task-price']
+    const contact = taskForm['task-contact']
+    //console.log(title.value, description.value, price.value, contact.value);
 
     // Vamos a crear una condicional para cambiar el status de editar o guardar
     if (!editStatus) {
         //console.log('updating')
-        saveTask(title.value, description.value);
-    }
-    else {
+        saveTask(title.value, description.value, price.value, contact.value);
+    } else {
         updateTask(id, {
             title: title.value,
-            description: description.value
-        } );
+            description: description.value,
+            price: price.value,
+            contact: contact.value
+        });
+        
+        editStatus = false;
+        id = "";
+        taskForm["btn-task-save"].innerText = "Publicar";
     }
-     taskForm.reset();
+
+    taskForm.reset();
 
 });
 
