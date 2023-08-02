@@ -46,17 +46,17 @@ window.addEventListener("DOMContentLoaded", async () => {
          console.log(doc.id)
 
              html += `
-                  <div class="card card-body pt-2">
-                       <h2>${task.title}</h2>
-                       <h3>${task.price}</h3>
+                    <div class="card card-body pt-2">
+                        <h2>${task.title}</h2>
+                        <h3>${task.price}</h3>
                         <p>${task.description}</p>
                         <p>${task.contact}</p>
                         <div>
                             <button class='btn btn-danger btn-delete' data-id="${doc.id}"><i class="fa-solid fa-trash-can" style="color: #061228;"></i></button>
                             <button class='btn btn-warning btn-edit' data-id="${doc.id}"><i class="fa-solid fa-pen" style="color: #061228;"></i></button>
                         </div>
-                        
-                 </div>
+                    </div>
+                    <br>
                  `;
         });
         taskContainer.innerHTML = html;
