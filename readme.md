@@ -19,9 +19,7 @@ La premisa es mantener los productos en circulación la mayor cantidad de tiempo
 
 # IMPORTANTE
 Se espera agregar las funcionalidades de:
-1. precio
-2. contacto
-3. imagenes del producto
+1. imagenes del producto
 
 ### Desarrolladoras
 
